@@ -9,4 +9,4 @@ To see it live please visit : https://sandipan-saha.github.io/agile-labs-social-
 <br>
 <br>
 
-**PS:** To get the best experience, I would recommened runnning the code locally!
+**PS:** To get the best experience, I would recommend running the code locally!

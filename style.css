@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+#feed {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 90px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 32px;
+}
+
+.postBlock {
+  border: 1px solid #ecf3f1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.userData {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px 0px;
+}
+.userData .userImage {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.postContent {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding: 0px 32px;
+}
+.postText {
+  font-size: 32px;
+}
+
+.actionBar {
+  border-top: 1px solid #ecf3f1;
+  border-bottom: 1px solid #ecf3f1;
+  padding: 16px 32px;
+}
+.actionBar .likeButton {
+  background-color: #ffffff;
+  color: #f48e2f;
+  border: 1px solid #f48e2f;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 16px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.actionBar .likeButton:hover,
+.postLiked {
+  background-color: #f48e2f !important;
+  color: #00358f !important;
+  border-color: #f48e2f !important;
+}
+
+.commentsSection {
+  padding: 0px 32px 32px;
+}
+
+.commentsSection div:first-child p {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+.commentsSection .commentAuthor {
+  font-weight: 600;
+}
+
+.commentsSection .commentsInput {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.commentsSection .commentsInput input {
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 12px 0px;
+  width: 80%;
+}
+.commentsSection .commentsInput input:focus {
+  outline: none;
+}
+
+.commentsSection .commentsInput button {
+  background-color: #ffffff;
+  color: #f48e2f;
+  border: 1px solid #f48e2f;
+  border-radius: 40px;
+  padding: 10px 20px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.commentsSection .commentsInput button:hover {
+  background-color: #f48e2f !important;
+  color: #00358f !important;
+  border-color: #f48e2f !important;
+}

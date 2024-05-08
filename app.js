@@ -160,7 +160,7 @@ function addComment(name) {
   var comments = document.getElementById("comments_" + name);
   var comment = document.createElement("p");
   if (input.value !== "") {
-    comment.innerHTML = '<span class="commentAuthor">You: </span>' + input.value;
+    comment.innerHTML = '<span class="commentAuthor">You </span>' + input.value;
     comments.appendChild(comment);
     input.value = "";
   }
